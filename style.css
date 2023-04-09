@@ -1,127 +1,19 @@
-.navbar{
-  margin:0;
-  border-radius:0%;
-  
-}
-.home-div{
-  background-image:url("http://www.palmbeachcodeschool.com/wp-content/uploads/2015/11/coding.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity:0.8;
-  width:100%;
-  padding-top:90px;
-  padding-bottom:90px;
-  box-shadow: 0 5px 5px #888888;
-  position:relative;
-  z-index:5;
-}
-.name{
-  color:white;
-  text-align:center;
-}
-.title{
-  color:white;
-  text-align:center;
-}
-.img-circle{
-  display:block;
-  margin: 0 auto;
-  opacity:1;
-}
-.social-img{
-  height:auto;
-  opacity:1;
-  margin:0 auto;  
-  width:60px;  
-}
-#social-media-container{
-  text-align:center;
-  padding:0;
-}
-.social-div{
-  display:inline-block;
-  margin:2%;
-}
-.about-div{
-  background-color: #d6eaf8 ;
-  padding-top:90px;
-  padding-bottom:90px;
-  box-shadow: 0 5px 5px #888888;
-  position:relative;
-  z-index:4;
-}
-.code-img{
-  display:block;
-  margin:auto;
-  text-align:center;
-}
-.about-hr{
-  width:80%;
-  text-align:left;
-  margin-top:15px;
-  margin-left:0;
-  margin-bottom:25px;
-  border-style: solid;
-  border-width:2px;
-  border-radius:5px;
-  color:#888888;
-  border-color:#888888;
-}
-.portafolio-div{
-  padding-top:90px;
-  padding-bottom:90px;
-  background-color:#d6eaf8;
-  position:relative;
-  z-index:2;
-  box-shadow: 0 5px 5px #888888;
-}
-.thumbnail-img-div{
-  width:90%;
-  height:90%;
-  display:block;
-  margin:auto;
-  text-align:left;
-}
-.portafolio-a:link, .portafolio-a:visited,.portafolio-a:hover,.portafolio-a:active{
-  text-decoration:none;
-  
-}
-.portafolio-title-text{
-  color:#3b3737;
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.exp-div{
-  padding-top:60px;
-  padding-bottom:60px;
-  position:relative;
-  z-index:3;
-  box-shadow: 0 5px 5px #888888;
+.work-item {
+  width: 25%;
+  padding: 10px;
 }
-.exp-hr{
-  width:100%;
-  text-align:left;
-  margin-top:15px;
-  margin-left:0;
-  margin-bottom:25px;
-  border-style: solid;
-  border-width:1px;
-  border-radius:5px;
-  color: #e5e8e8 ;
-  border-color: #e5e8e8 ;
+
+.work-item img {
+  width: 100%;
+  height: auto;
 }
-.contact-container{
-  padding-top:90px;
-  padding-bottom:90px;
-  z-index:1;
-}
-.exp-text-div{
-  word-wrap:break-word;
-  text-align:left;
-}
-#main-footer{
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align:center;
+
+.work-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
 }

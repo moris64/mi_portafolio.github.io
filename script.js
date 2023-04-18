@@ -1,19 +1,27 @@
-// Seleccione los elementos de botón de categoría y work-item
-const categoryBtns = document.querySelectorAll('.category-btn');
-const workItems = document.querySelectorAll('.work-item');
-
-// Agregue un controlador de eventos click a cada botón de categoría
-categoryBtns.forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    const category = btn.dataset.category;
-    
-    // Ocultar todos los work-items que no pertenecen a la categoría seleccionada
-    workItems.forEach(function(item) {
-      if (item.dataset.category === category || category === 'all') {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
+$.fn.scrollView = function () {
+  return this.each(function () {
+    $('html, body').animate({
+      scrollTop: $(this).offset().top
+    }, 1000);
   });
+}
+$('#home-a').click(function (event) {
+  event.preventDefault();
+  $('#home-div').scrollView();
+});
+$('#about-a').click(function (event) {
+  event.preventDefault();
+  $('#about-div').scrollView();
+});
+$('#exp-a').click(function (event) {
+  event.preventDefault();
+  $('#exp-div').scrollView();
+});
+$('#portafolio-a').click(function (event) {
+  event.preventDefault();
+  $('#portafolio-div').scrollView();
+});
+$('#contact-a').click(function (event) {
+  event.preventDefault();
+  $('#contact-div').scrollView();
 });
